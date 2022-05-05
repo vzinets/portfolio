@@ -408,16 +408,17 @@ width: 8px;
       display: flex;
       position: absolute;
       background-color: #FFFFFF;
-      height: 20px;
-    width: 20px;
+      height: 25px;
+    width: 25px;
     border-radius: 360px;
     background-repeat: no-repeat;
     background-size: contain;
-    border: 5px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
     
   }
   .dribbblet{
     background-image: url(img/dribbble.png);
+ 
 }
 .twitter{
     background-image: url(img/twitter.png);
