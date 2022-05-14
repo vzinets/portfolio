@@ -21,16 +21,19 @@ body{
 }
 .content{
     display: flex;
-    height: 100%;width: 100%;
+
 }
+
 .main-content{
-    
-    width: 63%;
-    
+     width: 63%;
+     padding-top: 153px;
+padding-left: 154px;
+padding-right: 125px; 
 }
 .side-content{
    position: relative;
-   width: 37%;
+
+   width: 100%;
 background:  linear-gradient(180deg, #6D5DA8 0%, #43479E 100%); 
 
 }
@@ -42,23 +45,22 @@ background:  linear-gradient(180deg, #6D5DA8 0%, #43479E 100%);
 /* HERO */
 .hero{
 display: flex;
-gap: 100px;
+gap: 80px;
 align-items: center;
-padding-top: 153px;
+/* padding-top: 153px;
 padding-left: 154px;
-padding-right: 125px;
+padding-right: 125px; */
 
 }
 .hero__img{
     width: 330px;
     height: auto;
 }
-.hero__img img{
+ .hero__img img{
     width: 100%;
-    height: auto;
+    height: auto; 
 }
 .hero__name{
-    
     font-size: 32px;
     font-weight: 300;
     line-height: 34px;
@@ -127,7 +129,7 @@ text-decoration: none;
 .hero__experience{
     position: relative;
     left: 100px;
-    
+    margin-top: 10px;
    
 }
 .hero__experience-title{
@@ -203,6 +205,7 @@ color: #42489e;
     left: 100px;
 }
 .hero__education-title{
+   
     font-family:var(--secondary-font-family);
 font-size: 27px;
 font-weight: 700;
@@ -211,7 +214,7 @@ letter-spacing: 0.01em;
 text-align: left;
 margin-left: 30px;
 color: #42489e;
-    margin-bottom: 40px;
+margin-bottom: 40px;
 }
 .hero__education-title::before{
      content: "";
@@ -220,6 +223,7 @@ color: #42489e;
       position: absolute;
        background-repeat: no-repeat;
        background-size: contain; 
+       top: -12px;
        left: -45px;  
        background-image: url(./img/clipboard2.png);
   
@@ -267,10 +271,11 @@ color: #42489e;
 }
 .hero__hobbies-title{
     color: #42489e;
-    margin :40px;
+    margin-top :40px;
 font-family: var(--secondary-font-family);
 font-size: 27px;
 text-align: left;
+max-width: 150px;
 
 }
 .hero__hobbies-info{
@@ -278,6 +283,7 @@ text-align: left;
 font-size: 16px;
 line-height: 25px;
 color:  #666666;
+margin-bottom: 50px;
 
 
 }
@@ -290,6 +296,7 @@ width: 50px;
     background-repeat: no-repeat;
     background-size: contain; 
     left: -45px;
+    top: -10px;
 }
 
 /* side-content */
@@ -298,8 +305,10 @@ width: 50px;
 
 }
 .side-section{
+   
     position: relative;
     left: 70px;
+    max-width: 35%;
 }
 .“{
     width: 40px;
@@ -307,14 +316,21 @@ position: relative;
 margin-top: 90px;
 margin-bottom: 50px;
 }
+.title,
+    .info,
+    .pro__skills,
+    .progress,
+    .skill__name{
+        width: 100%;
+    }
 .info{
+    width: 110%;
     position: relative;
-    max-width: 80%;
     margin-bottom: 60px;
     color: #FFFFFF;
 }
 .pro__skills{
-  
+  margin-bottom: 60px;
 position: relative;
 color: #FFFFFF;
 }
@@ -352,8 +368,9 @@ progress {
     background: #877DBA;
 
   }
-  .personal__skills{
-      display: "";
+   .personal__skills{
+      display: ""; 
+      margin-bottom: 60px;
   }
   .personal__skills-title{
       color: #FFFFFF;
@@ -418,10 +435,13 @@ width: 8px;
   }
   .dribbblet{
     background-image: url(img/dribbble.png);
- 
+ height: 25px;
+ width: 25px;
 }
 .twitter{
     background-image: url(img/twitter.png);
+    height: 25px;
+    width: 25px;
 }
 .behance{
     background-image: url(img/behance.png);
@@ -430,3 +450,362 @@ width: 8px;
     background-image: url(img/ui4free.png);
 }
  
+@media screen and (max-width:1024px) {
+    .hero__hobbies-title::before{top: 0;
+        
+    }
+   
+    .main-content{
+        padding-left: 35px;
+        padding-top: 50px;
+        
+    }
+    .title,
+    .info,
+    .pro__skills,
+    .progress,
+    .skill__name{
+        max-width: 250px;
+    }
+    .side-section{
+        max-width: 250px;
+    
+    }
+    .hero__info{
+        padding-left: 20px;
+    }
+    
+    .hero__name{
+        font-size:24px ;
+       line-height:26px ;
+    }
+.hero__job-title{
+    font-size:16px ;
+       line-height:18px ;
+       margin-bottom: 15px;
+}
+.hero__link{
+    font-size: 14px;
+    line-height: 15px;
+    
+}
+.hero__img img{
+width: 170%;
+height: auto;
+}
+.hero__experience-title::before,
+.hero__education-title::before,
+.hero__hobbies-title::before{
+    width: 45px;
+    height: 45px;
+    
+}
+.hero__education-title::before{
+    top: -10px;
+}
+}
+.hero__experience-title,
+.hero__hobbies-title,
+.hero__education-title{
+    font-size: 25px;
+    line-height: 25px;
+    gap: 30px;
+   margin-left: 15px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+.hero__experience-info,
+.hero-education-info{
+    margin-bottom: 20px; 
+}
+.hero__hobbies-info{
+    width: 370px;
+}
+.hero__experience-location{
+    margin-bottom: 10px;
+}
+.hero__experience-subtitle,
+.hero__education-subtitle{
+    margin-bottom: 5px;
+}
+.hero__experience{
+     left: 50px;
+} 
+
+    
+
+@media screen and (max-width:768px) {
+     .hero__img img{
+        height: 360px;
+        width: 360px;
+        margin-left: 23px;
+       
+    } 
+    .“{
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    .side-section{ 
+        left: 45px;
+    }
+    .hero__info{
+        width: 320;
+        margin-left: 70px;
+    }
+    .hero{
+    flex-direction: column-reverse;
+    gap: 20px;
+    
+}
+.hero__hobbies-title::before{
+    top: 15px;
+}
+.hero__hobbies-info{
+    width: 300px;
+}
+.side-section{
+    max-width: 180px;
+}
+
+.title,
+    .info,
+    .pro__skills,
+    .progress,
+    .skill__name{
+        max-width: 180px;
+       
+    }
+    
+    }
+
+
+ @media screen and (max-width:425px) {
+     main{
+         display: flex;
+         flex-direction: column;
+     }
+    
+     .main-content{
+         width: 100%;
+     }
+     .side-content{
+        width: 100%;
+        height: 100%;
+     }
+     .side-section{ 
+         width: 100%;
+        max-width: 180px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        left: 100px;
+        
+    }
+    .hero__experience,
+    .hero__education,
+    .hero__hobbies{
+        left: 30px;
+    }
+ .hero{
+    gap: 5px;
+    
+}
+
+    .hero__name{
+        font-size: 20px;
+        line-height: 34px;
+        margin-bottom: 5px;
+    }
+    .hero__name-highlight{
+        font-weight: 700;
+    }
+    
+    .hero__job-title{
+        line-height: 15px;
+        font-size: 10px;
+        margin-bottom:10px;
+    }
+    .hero__img img{
+        width: 180px;
+        height: auto;
+        margin-left: 100px;
+  }
+    .hero__contact-list, 
+    .hero__link {
+        font-size: 10px;
+        line-height: 8px;
+    }
+    .hero__contact-list{
+        padding-left: 25px; 
+    }
+    .hero__contact-item{
+        margin-bottom: 8px;
+    }
+    .hero__contact-item::before{
+        width: 15px;
+        height: 15px;
+        left: -25px; 
+    }
+
+    .hero__experience-title,
+    .hero__hobbies-title,
+    .hero__education-title{
+font-size: 16px;
+margin-top: 20px;
+margin-bottom: 15px;
+width:250px;
+}
+.hero__experience-subtitle,
+.hero__education-subtitle{
+    font-size: 12px;
+}
+.hero__experience-location{
+    font-size: 8px;
+}
+.hero__experience-info,
+.hero-education-info,
+.hero__hobbies-info{
+  font-size: 10px;
+  margin-bottom: 8px;
+  line-height: 15px;
+}
+.hero__hobbies-info{
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+.hero__experience-title::before,
+.hero__education-title::before,
+.hero__hobbies-title::before{
+    width: 30px;
+    height: 30px;
+    
+}
+.hero__experience-title::before,
+.hero__education-title::before{
+    top: -3px;
+    left: -36px;
+}
+.hero__hobbies-title::before{
+    top: 10px;
+    left: -33   px;
+
+}
+.hero__education-subtitle::before,
+.hero__experience-item:before{
+    border:3px solid #d6d3d3;
+    width: 5px;
+    height: 5px;
+    left: -27px;  
+}
+
+.year2021::before,
+.year2015::before{
+    font-size: 10px;
+    left: -70px;
+    
+} 
+
+
+
+.“{
+    width: 20px;
+margin-top: 50px;
+margin-bottom: 20px;
+}
+.title,
+    .info,
+    .pro__skills,
+    .progress,
+    .skill__name{
+        width: 100%;
+    }
+.info{
+    width: 110%;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.pro__skills{
+  margin-bottom: 20px;
+}
+.skill__title{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.skill__name{
+    font-size: 12px;
+  left: 15px;
+ margin-top:10PX ;
+ margin-bottom:4PX ;
+}
+.progress{
+
+     width: 150px;
+     height: 8px;
+   
+}
+
+   .personal__skills{ 
+      margin-bottom: 20px;
+  }
+  .personal__skills-title{
+      margin-top:20px ;
+      margin-bottom:10px ;
+      font-size: 16px;
+  }
+  .personal__skills-item{
+     margin-top: 15px;
+     margin-bottom: 5px;
+     font-size: 14px;
+  }
+  .container{
+      gap: 5px;
+  }
+  .gray,
+  .white{
+height: 6px;
+width: 6px;
+}
+  
+  .follow{
+     margin-bottom: 30px;
+  }
+  .follow-title{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+  }
+  
+  .follow-link{
+      left: 50px;
+      font-size: 14px;
+  }
+  .follow-item{
+      margin-top:  10px; 
+  }
+  .ball{
+      
+      height: 20px;
+    width: 20px;
+    border: 3px solid #FFFFFF;
+    
+ 
+
+
+
+}
+
+@media screen and (max-width:375px){
+    .hero__hobbies-info{
+        width: 100%;}
+        .“{
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .info{
+            margin-bottom: 20px;
+        }
+        .skill__title{
+            margin-bottom: 15px;
+        }
+} }
